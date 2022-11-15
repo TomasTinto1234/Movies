@@ -1,10 +1,13 @@
 .Buscador{
-    height: 720px;
+    height: 900px;
     overflow: scroll;
 }
 
 .Buscador::-webkit-scrollbar-thumb:active {
     background-color: #fff;
+}
+.Buscador::-webkit-scrollbar-thumb:hover {
+    color: #e28504;
 }
 
 .Buscador::-webkit-scrollbar-thumb {
@@ -29,6 +32,9 @@
     color:white;
     clear: both;
 }
+/* .form-container:hover {
+    color: #e28504;
+} */
 
 .form-container button {
     margin-left: 20px;
@@ -39,14 +45,14 @@
 }
 
 h2{
-    color:white;
+    color:#e28504;
     float: left;
     font-size: 28px;
 }
 
 .BtnGetMovie, .Fav{
     border: none;
-    background-color: rgb(255, 255, 0);;
+    background-color: #e28504;
     color: black;
     border-radius: 5px;
     font-weight: bold;

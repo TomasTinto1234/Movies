@@ -3,6 +3,9 @@ import { connect } from "react-redux";
 import { NavLink } from 'react-router-dom';
 import { addMovieFavorite, getMovies } from "../../actions";
 import './Buscador.css';
+import {
+  BsSuitHeartFill
+} from "react-icons/bs";
 export class Buscador extends Component {
   constructor(props) {
     super(props);
@@ -27,8 +30,8 @@ export class Buscador extends Component {
         <h2>Buscador</h2>
         <form className="form-container" onSubmit={(e) => this.handleSubmit(e)}>
           <div>
-            <label className="label" htmlFor="title">Película: </label>
-            <input className="txtMovie" type="text" id="title" autoComplete="off" value={title}
+            {/* <label className="label" htmlFor="title">Película: </label> */}
+            <input className="txtMovie" type="text" id="title" autoComplete="on" value={title}
               onChange={(e) => this.handleChange(e)}
             />
           </div>
@@ -48,7 +51,7 @@ export class Buscador extends Component {
                   <button
                     className="Fav" 
                     onClick={() =>this.props.addMovieFavorite({title: movie.Title, id: movie.imdbID, img: movie.Poster})}>
-                    FAV
+                    <BsSuitHeartFill/>
                   </button>
                 </div>
               </li>

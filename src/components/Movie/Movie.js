@@ -46,7 +46,7 @@ class Movie extends React.Component {
                     </div>
                     <div className="Regresar">
                         
-                        <NavLink className="LinkRegresar" to="/favs"><IoMdArrowRoundBack style={{position: 'relative', top: 4}}/>regresar</NavLink>
+                        <NavLink className="LinkRegresar" to="/"><IoMdArrowRoundBack style={{position: 'relative', top: 4}}/>regresar</NavLink>
                     </div>
                 </div>
             </div>
