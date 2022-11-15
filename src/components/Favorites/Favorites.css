@@ -1,5 +1,5 @@
 .TituloLink:hover{
-    color: #f00;
+    color: #e28504;
 }
 
 @media (min-width: 1400px) {
@@ -11,15 +11,18 @@
         clear: both;
         text-align: center;
         overflow: scroll;
+        border: white solid;
         /* border: thin dotted #0f0; */
     }
     
     .ListFavorite::-webkit-scrollbar-thumb:active {
         background-color: #fff;
+        border: solid #e28504 ;
     }
     
     .ListFavorite::-webkit-scrollbar-thumb {
         background: #00000050;
+        border: white solid;
         border-radius: 7px;
     }
     
@@ -42,6 +45,7 @@
         border-radius: 10px;
         margin-bottom: 40px;  
         box-shadow: 0 10px 10px #00000060;
+
     }
     
     .Titulo, .PeliImagen, .Botones{
@@ -72,7 +76,7 @@
     
     .FavBtn{
         height: 25px;
-        background-color: yellow;
+        background-color: #e28504;
         color: black;
         font-weight: bold;
         border-radius: 5px;
@@ -94,6 +98,7 @@
     .PosterFav{
         height: 150px;
         box-shadow: 0 15px 15px #00000080;
+        border:#e28504 solid;
         /* border: thin dotted #0f0; */
     }
 
@@ -124,6 +129,7 @@
         justify-content: space-around;
         margin: 10px;
         box-shadow: 0 10px 10px #00000060;
+        border:rgb(220, 18, 18) solid;
         /* border: thin dotted #f00; */
     }
     
@@ -148,6 +154,7 @@
     }
     
     .PeliImagen{
+        /* border: rgb(220, 18, 18) solid 1px; */
         width: 100px;
         height: 130px;
         overflow: hidden;
